@@ -1,0 +1,335 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+nav{
+    background-color: black;
+}
+nav .nav-link{
+    font-size: 17px;
+    position: relative;
+}
+nav .nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    background-color: #fff;
+}
+nav .nav-link:hover::before{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+nav .nav-link.active::before{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+header{
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.6);
+}
+.col-white{
+    color: #fff;
+}
+.overlay .content h1{
+    font-size: 50px;
+    
+}
+header .list-icon {
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s ease-in-out;
+}
+header h1::after{
+    content: 'LARY DANIELS';
+    font-weight: 500;
+    animation: typing 8s infinite;
+}
+.service{
+    background-color: #F5F5F5;
+}
+ .head h2{
+    font-weight: 900;
+}
+.service .card .icon {
+    background-color: #F5F5F5;
+    width: 80px;
+    height: 80px;
+    transition: all 0.4s ease-in-out;
+}
+.service .card:hover .icon{
+    color: white !important;
+    background-color:black !important;
+    
+}
+.service .card .card-content h3{
+    font-weight: 800;
+    opacity: 0.9;
+}
+.portfolio .card .card-img .card-icons{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio .card .card-img:hover .card-icons{
+    opacity: 1;
+}
+.portfolio .card .card-img .card-icons .text .list{
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio .card .card-img .card-icons .text .list :hover{
+   
+    background-color: white !important;
+    transition: all 0.5s ease-in-out;
+
+}
+.portfolio .card .card-img .card-icons .text .list :hover i{
+    color: black !important;
+    transition: all 0.5s ease-in-out;
+}
+.test{
+    background-color: #F5F5F5;
+}
+.carousel-indicators.custom-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .carousel-indicators.custom-indicators button.active {
+    opacity: 1;
+  }
+  .fw-900{
+    font-weight: 900;
+  }
+  .team{
+    background-color: #F5F5F5;
+  }
+  .team .card .img .list{
+        opacity: 0;
+        transition: all 1s ease-in-out;
+  }
+    .team .card:hover .list{
+            opacity: 1;
+            transform: rotateY(360deg);
+    }
+    .team .card .img img{
+        transition: all 1s ease-in-out;
+       
+    }
+
+    .team .card .img:hover img{
+        transform: scale(1.1);
+    }
+    .team .card .img .list .list-icon{
+        
+        transition: all 0.5s ease-in-out;
+    }
+    .team .card .img .list .list-icon:hover{
+       
+        background-color: white !important;
+    }
+    .team .card .img .list .list-icon:hover i{
+       
+        color: black !important;
+    }
+    .team .card .text{
+        background-color:  #5B5B5B;
+    }
+  .contact .content .icon{
+    width: 70px;
+    height: 70px;
+    transition: all 0.5s ease-in-out;
+  }
+  .contact .content:hover .icon{
+    background-color: black !important;
+    color: white !important;
+  }
+
+
+@keyframes typing {
+    0%{
+        content: 'L';
+    }
+    2%{
+        content: 'LA';
+    }
+    4%{
+        content: 'LAR';
+    }
+    6%{
+        content: 'LARY';
+    }
+    8%{
+        content: 'LARY ';
+    }
+    10%{
+        content: 'LARY D';
+    }
+    12%{
+        content: 'LARY DA';
+    }
+    14%{
+        content: 'LARY DAN';
+    }
+    16%{
+        content: 'LARY DANI';
+    }
+    18%{
+        content: 'LARY DANIE';
+    }
+    20%{
+        content: 'LARY DANIEL';
+    }
+    22%{
+        content: 'LARY DANIELS';
+    }
+    24%{
+        content: 'LARY DANIEL ';
+    }
+    26%{
+        content: 'LARY DANIE';
+    }
+    28%{
+        content: 'LARY DANI';
+    }
+    30%{
+        content: 'LARY DAN';
+    }
+    32%{
+        content: 'LARY DA';
+    }
+    34%{
+        content: 'LARY D';
+    }
+    36%{
+        content: 'LARY ';
+    }
+    38%{
+        content: 'LARY';
+    }
+    40%{
+        content: 'LAR';
+    }
+    42%{
+        content: 'LA';
+    }
+    44%{
+        content: 'L';
+    }
+    46%{
+        content: '';
+    }
+    48%{
+        content: 'D';
+    }
+    50%{
+        content: 'DE';
+    }
+    52%{
+        content: 'DES';
+    }
+    54%{
+        content: 'DESI';
+    }
+    56%{
+        content: 'DESIG';
+    }
+    58%{
+        content: 'DESIGN';
+    }
+    60%{
+        content: 'DESIGNE';
+    }
+    62%{
+        content: 'DESIGNER';
+    }
+    64%{
+        content: 'DESIGNE';
+    }
+    66%{
+        content: 'DESIGN';
+    }
+    68%{
+        content: 'DESI';
+    }
+    70%{
+        content: 'DES';
+    }
+    72%{
+        content: 'DE';
+    }
+
+    74%{
+        content: 'D';
+    }
+
+    76%{
+        content: '';
+    }
+    78%{
+        content: 'D';
+    }
+    80%{
+        content: 'DE';
+    }
+    82%{
+        content: 'DEV';
+    }
+    84%{
+        content: 'DEVE';
+    }
+    86%{
+        content: 'DEVEL';
+    }
+    88%{
+        content: 'DEVELO';
+    }
+    90%{
+        content: 'DEVELOP';
+    }
+    91%{
+        content: 'DEVELOPE';
+    }
+    92%{
+        content: 'DEVELOPER';
+    }
+    93%{
+        content: 'DEVELOPE';
+    }
+    94%{
+        content: 'DEVELOP';
+    }
+    95%{
+        content: 'DEVELO';
+    }
+    96%{
+        content: 'DEVEL';
+    }
+    97%{
+        content: 'DEVE';
+    }
+   
+    98%{
+        content: 'DEV';
+    }
+    99%{
+        content: 'D';
+    }
+    100%{
+        content: '';
+    }
+    
+ 
+
+}
